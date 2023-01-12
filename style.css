@@ -1,0 +1,60 @@
+body {
+    height: 100%;
+    overflow: hidden;
+    background-color:lightcoral;
+
+    display: grid;
+    grid-template: 
+        "header header  header " auto
+        "nav    article aside " 1fr
+        "nav    footer  footer " auto /
+        auto    1fr     auto; 
+}
+
+header {
+    grid-area: header;
+    background-color: rosybrown;
+    padding: 10px;
+}
+h1 {
+    display: inline;
+}
+header > ul {
+    position: relative;
+    float: right;
+    display: flex;
+    list-style:none;
+    padding-right: 100px;
+}
+
+li {
+    padding-right: 20px;
+}
+
+
+article {
+    grid-area: article;
+    background-color: lightgrey;
+    padding: 10px;
+
+}
+
+aside {
+    grid-area: aside;
+    background-color: aquamarine;
+    padding: 10px;
+
+}
+
+nav {
+    grid-area: nav;
+    background-color: bisque;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: beige;
+    padding: 10px;
+
+}
